@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f3f4f6;
+
+    padding: 20px;
+}
+
+.translator {
+    width: 100%;
+    max-width: 900px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+
+    color: #2563eb;
+
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+/* Languages */
+
+.language-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+select {
+    flex: 1;
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.swap {
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+.swap:hover {
+    background: #1d4ed8;
+}
+
+/* Text areas */
+
+.text-container {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+}
+
+.text-box {
+    display: flex;
+
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+
+    height: 220px;
+
+    resize: none;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #2563eb;
+}
+
+textarea[readonly] {
+    background: #f9fafb;
+}
+
+.counter {
+    text-align: right;
+
+    margin-top: 5px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+/* Translate button */
+
+.translate-btn {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.translate-btn:hover {
+    background: #1d4ed8;
+}
+
+.translate-btn:disabled {
+    background: #999;
+
+    cursor: not-allowed;
+}
+
+/* Status */
+
+#status {
+    text-align: center;
+
+    margin-top: 15px;
+
+    color: #555;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .translator {
+        padding: 20px;
+    }
+
+    .text-container {
+        grid-template-columns: 1fr;
+    }
+
+    .language-row {
+        gap: 8px;
+    }
+
+    select {
+        font-size: 14px;
+    }
+
+}
+

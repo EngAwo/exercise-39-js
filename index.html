@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Translator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="translator">
+
+        <h1>Translator</h1>
+
+        <p class="subtitle">
+            Translate text between two languages
+        </p>
+
+        <!-- Language selection -->
+        <div class="language-row ,languages">
+
+            <select id="fromLanguage">
+                <option value="en">English</option>
+                <option value="so">Somali</option>
+                <option value="ar">Arabic</option>
+                <option value="fr">French</option>
+                <option value="es">Albanian</option>
+                <option value="es">Amharic</option>
+                <option value="es">Italian</option>
+                <option value="es">Norwegian</option>
+                <option value="es">Kannada</option>
+                <option value="es">Khmer</option>
+                <option value="es">Korean</option>
+                <option value="es">Greek</option>
+                <option value="es">Persian</option>
+                <option value="es">Malayala</option>
+                <option value="es">Marath</option>
+                <option value="es">Turkish"</option>
+                <option value="es">Lithuanian</option>
+                <option value="es">Latvian</option>
+            </select>
+           
+   
+            <button id="swapButton" class="swap">
+                ⇄
+            </button>
+
+            <select id="toLanguage">
+                <option value="so">Somali</option>
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+                <option value="fr">French</option>
+                <option value="es">Spanish</option>
+                <option value="es">Amharic</option>
+                <option value="es">Italian</option>
+                <option value="es">Norwegian</option>
+                <option value="es">Kannada</option>
+                <option value="es">Khmer</option>
+                <option value="es">Korean</option>
+                <option value="es">Greek</option>
+                <option value="es">Persian</option>
+                <option value="es">Malayala</option>
+                <option value="es">Marath</option>
+                <option value="es">Turkish"</option>
+                <option value="es">Lithuanian</option>
+            </select>
+
+        </div>
+
+        <!-- Text areas -->
+        <div class="text-container">
+
+            <div class="text-box">
+
+                <label>FROME</label>
+
+                <textarea
+                    id="inputText"
+                    placeholder="Write something here..."
+                ></textarea>
+
+                <div class="counter">
+                    <span id="characterCount">0</span> characters
+                </div>
+
+            </div>
+
+
+            <div class="text-box">
+
+                <label>TO</label>
+
+                <textarea
+                    id="outputText"
+                    placeholder="Translation will appear here..."
+                    readonly
+                ></textarea>
+
+            </div>
+
+        </div>
+
+        <!-- Translate button -->
+        <button id="translateButton" class="translate-btn">
+            Translate
+        </button>
+
+        <!-- Status -->
+        <p id="status"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
